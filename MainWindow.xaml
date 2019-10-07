@@ -14,7 +14,7 @@
     </Window.Resources>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="New Convertor" Command="{Binding GetAddConvertorCommand}"/>
+            <MenuItem Header="New Convertor" Command="{Binding AddConvertorCommand}"/>
         </Menu>
         <ScrollViewer>
             <ItemsControl ItemsSource="{Binding Convertors}">
@@ -36,7 +36,7 @@
                                             Content="X"
                                             MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" 
                                             MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}"
-                                            Command="{Binding GetCloseCommand}"/>
+                                            Command="{Binding CloseCommand}"/>
                                 </DockPanel>
                             </GroupBox.Header>
                             <TextBox Text="{Binding Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
